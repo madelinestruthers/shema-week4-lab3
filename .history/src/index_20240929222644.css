@@ -1,0 +1,83 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Apply Poppins to all elements */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e9f7e9;
+}
+
+.App {
+  padding: 10px;
+  max-width: 60%;
+  margin: auto;
+}
+
+.App > h1 {
+  text-align: center;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;  /* Increase space between individual stories */
+}
+
+.story {
+  position: relative;
+  padding: 1em;
+  box-shadow: 0px 0px 10px rgb(108, 208, 1);
+  border: 5px solid rgb(88, 166, 5);  /* 2px dark green border */
+  margin-bottom: 2em;
+}
+
+.story:hover {
+  background-color: rgba(250, 160, 43, 0.665);
+}
+
+.story span.delete {
+  position: absolute;
+  width: 1.8rem;              
+  height: 1.8rem;             
+  text-align: center;
+  line-height: 1.6rem;        
+  top: 5px;
+  right: 5px;
+  background: #d10135;
+  color: #fff;
+  border-radius: 50%;         
+  cursor: pointer;
+  font-size: 1.3rem;            
+}
+
+
+.story_header {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.story_header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+.story_header h1 > a:hover {
+  color: red; /* Change text color to red on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.story_creator {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.story_image {
+  max-width: 20%;
+}
+
+.story_image img {
+  width: 100%;
+}

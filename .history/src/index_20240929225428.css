@@ -23,11 +23,6 @@ body {
   border-bottom: solid 1.5px rgb(88, 166, 5);
 }
 
-.feed {
-  display: flex;
-  flex-direction: column;
-  gap: 4em; 
-}
 
 .story {
   position: relative;
@@ -49,17 +44,15 @@ body {
   line-height: 1.6rem;        
   top: 5px;
   right: 5px;
-  box-shadow: 0px 0px 10px black;
-  color: black;
+  background: #d10135;
+  color: #fff;
   border-radius: 50%;         
   cursor: pointer;
-  font-size: 1.8rem;    
-  margin: 2px;        
+  font-size: 1.3rem;            
 }
 
 .story span.delete:hover {
-  color: white;
-  background-color:  rgb(8, 119, 8);
+  color: black;
 }
 
 
@@ -76,7 +69,7 @@ body {
   font-size: 1.5em;
   color: inherit;
   text-decoration: none;
-  width: 90%;
+
 }
 
 .story_header h1 > a:hover {
